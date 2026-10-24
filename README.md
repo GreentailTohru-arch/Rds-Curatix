@@ -34,13 +34,13 @@ Rds Curatix is a visual workspace for building virtual exhibitions, arranging ar
 
 ## Download
 
-The current desktop release is **2026.3.5** for **Windows x64**.
+The current desktop release is **2026.3.6** for **Windows x64**.
 
 | Package | Description |
 | --- | --- |
-| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.5/Rds-Curatix-2026-2026.3.5-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
-| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.5/Rds-Curatix-2026-2026.3.5-x64-Portable.exe) | Runs the desktop app without an installer. |
-| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.5/SHA256SUMS-2026.3.5.txt) | Verifies the integrity of the official downloads. |
+| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.6/Rds-Curatix-2026-2026.3.6-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
+| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.6/Rds-Curatix-2026-2026.3.6-x64-Portable.exe) | Runs the desktop app without an installer. |
+| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.6/SHA256SUMS-2026.3.6.txt) | Verifies the integrity of the official downloads. |
 
 Release notes and other available versions are listed on the [Releases page](https://github.com/GreentailTohru-arch/Rds-Curatix/releases).
 
@@ -58,18 +58,24 @@ Use a WebXR-capable headset browser over HTTPS. This update was verified with em
 
 ### SteamVR from the Windows App
 
-Open **View → WebXR Roaming → SteamVR 串流** and click **1. 启动 SteamVR**. Connect the headset to the PC through Steam Link or Virtual Desktop and wait for SteamVR to show it as ready. Then click **2. 头显已连接，打开展厅**, and click **开始 VR** in the new preview window. Accept the browser's immersive-VR permission prompt if shown.
+Open **View → WebXR Roaming → SteamVR 串流** and click **启动 SteamVR**. Connect the headset to the PC through Steam Link or Virtual Desktop and wait for SteamVR to show it as ready. Then click **打开展厅预览**, and click **开始 VR** in the new preview window. Accept the browser's immersive-VR permission prompt if shown.
 
-This compatibility path uses a separate browser window for stereoscopic WebXR. The exhibition snapshot includes unsaved edits; subsequent changes can be sent with **重新连接头显 / 更新展厅**. Chrome / Edge previews start a fresh browser process on reconnect. EGOlite uses its existing browser configuration. Imported media stays on the PC and is streamed locally to the browser. Keep the desktop app open; **结束预览** disconnects the preview without altering the original project.
+This compatibility path uses a separate browser window for stereoscopic WebXR. The exhibition snapshot includes unsaved edits; subsequent changes can be sent with **重新连接 / 更新展厅**. Chrome / Edge previews start a fresh browser process on reconnect. EGOlite uses its existing browser configuration. Imported media stays on the PC and is streamed locally to the browser. Keep the desktop app open; **结束预览** disconnects the preview without altering the original project.
 
 The launcher detects SteamVR, browsers and the current OpenXR runtime. EGOlite is selected first when installed and retains its working VR configuration. Chrome / Edge request SteamVR for their preview process without changing the system default. If no headset is detected, select SteamVR as the current runtime in **SteamVR Settings → OpenXR**, close the preview window, and launch it again. Actual headset and wireless-network validation is still required; the app does not supply its own headset streaming transport.
 
-Version 2026.3.5 supports analog trigger and grip values when a browser does not emit select/squeeze events, with no duplicate action when both are available. Spatial menus show a hit cursor and hover highlight. Opening the VR dashboard, losing tracking or disconnecting a controller cancels pending teleportation. The status panel distinguishes connected controllers from missing joystick axes.
+Controller input supports analog trigger and grip values when a browser does not emit select/squeeze events, with no duplicate action when both are available. Spatial menus show a hit cursor and hover highlight. Opening the VR dashboard, losing tracking or disconnecting a controller cancels pending teleportation. The status panel distinguishes connected controllers from missing joystick axes.
+
+## Workspace UI in 2026.3.6
+
+The title row shows the app and project name, with window controls on Windows. A second row contains Home, menus and workspace tabs. Opening another menu, clicking outside, choosing an action or pressing Escape closes the previous menu. Home contains recent projects; quick-start cards live exclusively in the official venue library. About shows the software version from the same package metadata as the desktop installer.
+
+The desktop VR dialog offers SteamVR streaming only. VR setup, movement cards, connection feedback, the session monitor and the floating headset menu share the dark workspace theme and orange accents. Joystick, teleport and hybrid modes remain available.
 
 ## Getting Started
 
 1. Install the Windows app, run the portable edition, or open the web app.
-2. Create a gallery or choose a built-in venue template.
+2. Open a recent project from Home, create a gallery, or choose a quick-start template in the official venue library.
 3. Assemble spaces and place exhibition modules in the workspace.
 4. Import artwork and media in the asset library, then bind them to exhibits or immersive channels.
 5. Explore the exhibition or configure a cinematic tour.
