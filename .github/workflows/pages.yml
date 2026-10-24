@@ -1,0 +1,47 @@
+name: Deploy Rds Curatix Web
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out distribution files
+        uses: actions/checkout@v6
+      - name: Validate distribution boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f web/index.html
+          test -f assets/logo.svg
+          for forbidden in src electron tests scripts node_modules package.json package-lock.json tsconfig.json; do
+            test ! -e "$forbidden"
+          done
+          if find web -type f \( -iname '*.map' -o -iname '*.ts' -o -iname '*.tsx' -o -iname '*.cura' -o -iname '*.galproj' \) -print -quit | grep -q .; then
+            echo 'Development or project files cannot be published.' >&2
+            exit 1
+          fi
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload pre-built web app
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

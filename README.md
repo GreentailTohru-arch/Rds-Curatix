@@ -1,0 +1,82 @@
+<p align="center">
+  <img src="assets/logo.svg" alt="Rds Curatix logo" width="144" height="144">
+</p>
+
+<h1 align="center">Rds Curatix</h1>
+
+<p align="center">A modular 3D gallery, exhibition design, and digital twin studio.</p>
+
+<p align="center">
+  <a href="https://greentailtohru-arch.github.io/Rds-Curatix/">Launch Web App</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest">Download for Windows</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/issues">Report an Issue</a>
+</p>
+
+## Overview
+
+Rds Curatix is a visual workspace for building virtual exhibitions, arranging artwork, and exploring galleries through interactive and cinematic tours. The Windows desktop app and the web app share the same exhibition tools and portable project format.
+
+**Rds Curatix is proprietary, closed-source software.** This is the official distribution repository. Application source code, development projects, and user exhibition files are not published here.
+
+## Features
+
+- **Modular exhibition spaces** — assemble multi-floor galleries with geometric rooms, corridors, stairs, and named exhibition zones.
+- **Exhibition tools** — place wall-mounted frames, display walls, glass showcases, sculpture plinths, screens, lighting, and furniture.
+- **Immersive media** — bind separate elevation and floor video channels across connected immersive screens, with aspect-ratio and resolution guidance.
+- **Physical rendering** — explore procedural materials, museum lighting, soft shadows, and adjustable rendering quality.
+- **Interactive and cinematic tours** — navigate galleries directly, visualize tour routes, and edit camera movements and artwork focus.
+- **Connected workflows** — manage artwork in the asset library and inspect spatial and content relationships in the relation tree.
+- **Portable projects** — save `.cura` projects or exchange `.json` files with embedded exhibition assets between desktop and web.
+
+## Download
+
+The current desktop release is **2026.3.0** for **Windows x64**.
+
+| Package | Description |
+| --- | --- |
+| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.0/Rds-Curatix-2026-2026.3.0-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
+| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.0/Rds-Curatix-2026-2026.3.0-x64-Portable.exe) | Runs the desktop app without an installer. |
+| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.0/SHA256SUMS-2026.3.0.txt) | Verifies the integrity of the official downloads. |
+
+Release notes and other available versions are listed on the [Releases page](https://github.com/GreentailTohru-arch/Rds-Curatix/releases).
+
+## Web App
+
+Open **[Rds Curatix for the Web](https://greentailtohru-arch.github.io/Rds-Curatix/)**. A desktop browser with WebGPU support and compatible graphics hardware provides the best experience. Rendering performance depends on the graphics hardware, selected quality, and exhibition complexity.
+
+The web app stores local drafts in the current browser. Export a project to keep a portable backup or move it to another browser or to the desktop app.
+
+## Getting Started
+
+1. Install the Windows app, run the portable edition, or open the web app.
+2. Create a gallery or choose a built-in venue template.
+3. Assemble spaces and place exhibition modules in the workspace.
+4. Import artwork and media in the asset library, then bind them to exhibits or immersive channels.
+5. Explore the exhibition or configure a cinematic tour.
+6. Save or export your project as `.cura` or `.json`.
+
+On desktop, `Ctrl+S` saves and `Ctrl+Shift+S` saves a new copy. In the web app, saving downloads a portable project. `Ctrl+O` opens a compatible project. Press `M` in the gallery workspace to open the floor map.
+
+## Workspace Preview
+
+![Rds Curatix running the built-in immersive exhibition template](assets/workspace.png)
+
+## Repository Contents
+
+- `assets/` — product logo and application preview.
+- `web/` — pre-built web application distributed through GitHub Pages.
+- `.github/workflows/` — deployment of the pre-built web application.
+
+This repository does not include the development environment, application source project, or editable exhibition project files. GitHub's automatically generated repository archives contain only these public distribution materials.
+
+## Feedback
+
+Please [open an issue](https://github.com/GreentailTohru-arch/Rds-Curatix/issues/new) for a reproducible problem or a feature request. Include the app version, operating system, graphics hardware, and reproduction steps. Attach only materials you intend to make public.
+
+## License
+
+Copyright © 2026 Rds. All rights reserved.
+
+Rds Curatix is proprietary software and is not released under an open-source license. Publication of desktop binaries and the compiled web client does not make the application's development source available.

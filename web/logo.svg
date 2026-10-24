@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Curatix Studio</title>
+  <desc id="desc">An orange gradient C frame formed from regular concentric hexagons, with an open transparent right segment and three white and gray gradient interior planes.</desc>
+  <!-- Point-up regular hexagons: center (512,512), circumradii 400 and 280.
+       Each edge is respectively 400 or 280. All slanted edges are 30 degrees.
+       Orange ring omits its right vertical segment to form C. -->
+  <defs>
+    <linearGradient id="orangeGradient" gradientUnits="userSpaceOnUse" x1="280" y1="180" x2="740" y2="880">
+      <stop offset="0" stop-color="#FFAA32"/>
+      <stop offset="0.48" stop-color="#FF7900"/>
+      <stop offset="1" stop-color="#E85A00"/>
+    </linearGradient>
+    <linearGradient id="whiteOuterGradient" gradientUnits="userSpaceOnUse" x1="760" y1="340" x2="860" y2="710">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E4E8ED"/>
+    </linearGradient>
+    <linearGradient id="leftWallGradient" gradientUnits="userSpaceOnUse" x1="300" y1="340" x2="490" y2="600">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EBEEF2"/>
+    </linearGradient>
+    <linearGradient id="rightWallGradient" gradientUnits="userSpaceOnUse" x1="540" y1="280" x2="730" y2="640">
+      <stop offset="0" stop-color="#E8EBEF"/>
+      <stop offset="1" stop-color="#C5CBD3"/>
+    </linearGradient>
+    <linearGradient id="floorGradient" gradientUnits="userSpaceOnUse" x1="512" y1="512" x2="512" y2="792">
+      <stop offset="0" stop-color="#BDC4CD"/>
+      <stop offset="1" stop-color="#969FAB"/>
+    </linearGradient>
+  </defs>
+  <g stroke="none" stroke-linejoin="miter">
+    <!-- Three congruent interior rhombi, meeting at the exact center. -->
+    <path id="left-wall" fill="url(#leftWallGradient)" d="M512 232 269.512887 372 269.512887 652 512 512Z"/>
+    <path id="right-wall" fill="url(#rightWallGradient)" d="M512 232 754.487113 372 754.487113 652 512 512Z"/>
+    <path id="floor" fill="url(#floorGradient)" d="M512 512 269.512887 652 512 792 754.487113 652Z"/>
+    <!-- Right outer segment remains transparent, preserving the C opening. -->
+    <!-- One continuous five-edge orange C, with 16-unit circular fillets on its six exterior corners; interior geometry preserved. -->
+    <path id="c-frame" fill="url(#orangeGradient)" d="M834.410162 325.856406 A16 16 0 0 0 834.410162 298.143594 L520 116.618802 A16 16 0 0 0 504 116.618802 L173.589838 307.381198 A16 16 0 0 0 165.589838 321.237604 L165.589838 702.762396 A16 16 0 0 0 173.589838 716.618802 L504 907.381198 A16 16 0 0 0 520 907.381198 L834.410162 725.856406 A16 16 0 0 0 834.410162 698.143594 L754.487113 652 L512 792 L269.512887 652 L269.512887 372 L512 232 L754.487113 372 Z"/>
+  </g>
+</svg>
+
+
+

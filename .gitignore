@@ -1,0 +1,20 @@
+# The public repository contains distribution files only.
+node_modules/
+src/
+electron/
+tests/
+scripts/
+build/
+release/
+.desktop-test/
+package.json
+package-lock.json
+tsconfig.json
+vite.config.*
+vitest.config.*
+*.map
+*.cura
+*.galproj
+*.exe
+*.blockmap
+*.log
