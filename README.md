@@ -34,13 +34,13 @@ Rds Curatix is a visual workspace for building virtual exhibitions, arranging ar
 
 ## Download
 
-The current desktop release is **2026.3.4** for **Windows x64**.
+The current desktop release is **2026.3.5** for **Windows x64**.
 
 | Package | Description |
 | --- | --- |
-| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.4/Rds-Curatix-2026-2026.3.4-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
-| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.4/Rds-Curatix-2026-2026.3.4-x64-Portable.exe) | Runs the desktop app without an installer. |
-| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.4/SHA256SUMS-2026.3.4.txt) | Verifies the integrity of the official downloads. |
+| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.5/Rds-Curatix-2026-2026.3.5-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
+| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.5/Rds-Curatix-2026-2026.3.5-x64-Portable.exe) | Runs the desktop app without an installer. |
+| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.5/SHA256SUMS-2026.3.5.txt) | Verifies the integrity of the official downloads. |
 
 Release notes and other available versions are listed on the [Releases page](https://github.com/GreentailTohru-arch/Rds-Curatix/releases).
 
@@ -64,7 +64,7 @@ This compatibility path uses a separate browser window for stereoscopic WebXR. T
 
 The launcher detects SteamVR, browsers and the current OpenXR runtime. EGOlite is selected first when installed and retains its working VR configuration. Chrome / Edge request SteamVR for their preview process without changing the system default. If no headset is detected, select SteamVR as the current runtime in **SteamVR Settings → OpenXR**, close the preview window, and launch it again. Actual headset and wireless-network validation is still required; the app does not supply its own headset streaming transport.
 
-Version 2026.3.4 calibrates the gallery spawn against the physical room origin and binds controllers that connected before renderer preparation. Two-axis and four-axis joystick mappings are supported. The desktop page shows VR status and controller count while the headset presents the gallery; Reset Position and Exit VR remain available on the desktop and spatial menus. Controller appearance uses local geometry so session exit does not depend on a remote model download.
+Version 2026.3.5 supports analog trigger and grip values when a browser does not emit select/squeeze events, with no duplicate action when both are available. Spatial menus show a hit cursor and hover highlight. Opening the VR dashboard, losing tracking or disconnecting a controller cancels pending teleportation. The status panel distinguishes connected controllers from missing joystick axes.
 
 ## Getting Started
 
@@ -98,3 +98,7 @@ Please [open an issue](https://github.com/GreentailTohru-arch/Rds-Curatix/issues
 Copyright © 2026 Rds. All rights reserved.
 
 Rds Curatix is proprietary software and is not released under an open-source license. Publication of desktop binaries and the compiled web client does not make the application's development source available.
+
+### Quest controllers visible but joystick input missing
+
+On Windows, an installed Ultraleap OpenXR layer can interfere with physical Quest controller input. If Curatix reports missing joystick axes, check Ultraleap Control Panel → Settings → **OpenXR Support**. Turning it off and restarting the VR browser restored joystick walking, snap turning and buttons in our Quest 3 / Steam Link / EGOlite hardware test. This setting also affects Ultraleap hand tracking in other OpenXR applications and can be re-enabled in the same panel. No Ultraleap uninstall or system runtime change is required. A web page cannot change the computer’s OpenXR plugin settings.
