@@ -27,18 +27,19 @@ Rds Curatix is a visual workspace for building virtual exhibitions, arranging ar
 - **Immersive media** — bind separate elevation and floor video channels across connected immersive screens, with aspect-ratio and resolution guidance.
 - **Physical rendering** — explore procedural materials, museum lighting, soft shadows, and adjustable rendering quality.
 - **Interactive and cinematic tours** — navigate galleries directly, visualize tour routes, and edit camera movements and artwork focus.
+- **VR roaming** — choose joystick, teleport, or hybrid locomotion before entering VR or from the spatial menu. Uses a compatible renderer when the headset does not grant WebGPU XR.
 - **Connected workflows** — manage artwork in the asset library and inspect spatial and content relationships in the relation tree.
 - **Portable projects** — save `.cura` projects or exchange `.json` files with embedded exhibition assets between desktop and web.
 
 ## Download
 
-The current desktop release is **2026.3.0** for **Windows x64**.
+The current desktop release is **2026.3.1** for **Windows x64**.
 
 | Package | Description |
 | --- | --- |
-| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.0/Rds-Curatix-2026-2026.3.0-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
-| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.0/Rds-Curatix-2026-2026.3.0-x64-Portable.exe) | Runs the desktop app without an installer. |
-| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.0/SHA256SUMS-2026.3.0.txt) | Verifies the integrity of the official downloads. |
+| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.1/Rds-Curatix-2026-2026.3.1-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
+| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.1/Rds-Curatix-2026-2026.3.1-x64-Portable.exe) | Runs the desktop app without an installer. |
+| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.1/SHA256SUMS-2026.3.1.txt) | Verifies the integrity of the official downloads. |
 
 Release notes and other available versions are listed on the [Releases page](https://github.com/GreentailTohru-arch/Rds-Curatix/releases).
 
@@ -47,6 +48,12 @@ Release notes and other available versions are listed on the [Releases page](htt
 Open **[Rds Curatix for the Web](https://greentailtohru-arch.github.io/Rds-Curatix/)**. A desktop browser with WebGPU support and compatible graphics hardware provides the best experience. Rendering performance depends on the graphics hardware, selected quality, and exhibition complexity.
 
 The web app stores local drafts in the current browser. Export a project to keep a portable backup or move it to another browser or to the desktop app.
+
+### VR Controls
+
+In the web app, open **View → WebXR Roaming**, choose **摇杆 (Joystick)**, **位移 (Teleport)**, or **混合 (Hybrid)**, and start VR. Use the left stick to walk, hold/release the trigger to aim/teleport, and flick the right stick for a 45° snap turn. The grip button brings the spatial menu in front of you; point and press the trigger to change modes or exit.
+
+Use a WebXR-capable headset browser over HTTPS. This update was verified with emulated XR sessions and stereo rendering; physical headset validation remains necessary.
 
 ## Getting Started
 
