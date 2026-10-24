@@ -28,18 +28,19 @@ Rds Curatix is a visual workspace for building virtual exhibitions, arranging ar
 - **Physical rendering** — explore procedural materials, museum lighting, soft shadows, and adjustable rendering quality.
 - **Interactive and cinematic tours** — navigate galleries directly, visualize tour routes, and edit camera movements and artwork focus.
 - **VR roaming** — choose joystick, teleport, or hybrid locomotion before entering VR or from the spatial menu. Uses a compatible renderer when the headset does not grant WebGPU XR.
+- **SteamVR launch on Windows** — launch a local Chrome / Edge VR preview from the desktop app with the current exhibition and unsaved changes; connect the headset using Steam Link or Virtual Desktop.
 - **Connected workflows** — manage artwork in the asset library and inspect spatial and content relationships in the relation tree.
 - **Portable projects** — save `.cura` projects or exchange `.json` files with embedded exhibition assets between desktop and web.
 
 ## Download
 
-The current desktop release is **2026.3.1** for **Windows x64**.
+The current desktop release is **2026.3.2** for **Windows x64**.
 
 | Package | Description |
 | --- | --- |
-| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.1/Rds-Curatix-2026-2026.3.1-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
-| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.1/Rds-Curatix-2026-2026.3.1-x64-Portable.exe) | Runs the desktop app without an installer. |
-| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.1/SHA256SUMS-2026.3.1.txt) | Verifies the integrity of the official downloads. |
+| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.2/Rds-Curatix-2026-2026.3.2-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
+| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.2/Rds-Curatix-2026-2026.3.2-x64-Portable.exe) | Runs the desktop app without an installer. |
+| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.2/SHA256SUMS-2026.3.2.txt) | Verifies the integrity of the official downloads. |
 
 Release notes and other available versions are listed on the [Releases page](https://github.com/GreentailTohru-arch/Rds-Curatix/releases).
 
@@ -54,6 +55,14 @@ The web app stores local drafts in the current browser. Export a project to keep
 In the web app, open **View → WebXR Roaming**, choose **摇杆 (Joystick)**, **位移 (Teleport)**, or **混合 (Hybrid)**, and start VR. Use the left stick to walk, hold/release the trigger to aim/teleport, and flick the right stick for a 45° snap turn. The grip button brings the spatial menu in front of you; point and press the trigger to change modes or exit.
 
 Use a WebXR-capable headset browser over HTTPS. This update was verified with emulated XR sessions and stereo rendering; physical headset validation remains necessary.
+
+### SteamVR from the Windows App
+
+Open **View → WebXR Roaming → SteamVR 串流**, select an installed Chrome or Edge browser and a locomotion mode, then start the preview. Connect the headset to the PC through Steam Link or Virtual Desktop, wait for SteamVR to detect it, and click **开始 VR** in the preview window. Accept the browser's immersive-VR permission prompt if shown.
+
+This compatibility path uses a separate browser window for stereoscopic WebXR. The exhibition snapshot includes unsaved edits; subsequent changes can be sent with **用最新修改重新启动**. Imported media stays on the PC and is streamed locally to the browser. Keep the desktop app open; **结束预览** disconnects the preview without altering the original project.
+
+The launcher detects SteamVR, browsers and the current OpenXR runtime. It requests SteamVR for the preview process without changing the system default. If no headset is detected, select SteamVR as the current runtime in **SteamVR Settings → OpenXR**, close the preview window, and launch it again. Actual headset and wireless-network validation is still required; the app does not supply its own headset streaming transport.
 
 ## Getting Started
 
