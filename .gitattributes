@@ -1,2 +1,5 @@
 assets/logo.svg -text
 web/** -text
+
+# This is a distribution repository; exclude all files from language statistics.
+* linguist-detectable=false
