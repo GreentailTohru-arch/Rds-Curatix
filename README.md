@@ -34,13 +34,13 @@ Rds Curatix is a visual workspace for building virtual exhibitions, arranging ar
 
 ## Download
 
-The current desktop release is **2026.3.2** for **Windows x64**.
+The current desktop release is **2026.3.3** for **Windows x64**.
 
 | Package | Description |
 | --- | --- |
-| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.2/Rds-Curatix-2026-2026.3.2-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
-| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.2/Rds-Curatix-2026-2026.3.2-x64-Portable.exe) | Runs the desktop app without an installer. |
-| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.2/SHA256SUMS-2026.3.2.txt) | Verifies the integrity of the official downloads. |
+| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.3/Rds-Curatix-2026-2026.3.3-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
+| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.3/Rds-Curatix-2026-2026.3.3-x64-Portable.exe) | Runs the desktop app without an installer. |
+| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.3/SHA256SUMS-2026.3.3.txt) | Verifies the integrity of the official downloads. |
 
 Release notes and other available versions are listed on the [Releases page](https://github.com/GreentailTohru-arch/Rds-Curatix/releases).
 
@@ -58,11 +58,13 @@ Use a WebXR-capable headset browser over HTTPS. This update was verified with em
 
 ### SteamVR from the Windows App
 
-Open **View → WebXR Roaming → SteamVR 串流**, select an installed Chrome or Edge browser and a locomotion mode, then start the preview. Connect the headset to the PC through Steam Link or Virtual Desktop, wait for SteamVR to detect it, and click **开始 VR** in the preview window. Accept the browser's immersive-VR permission prompt if shown.
+Open **View → WebXR Roaming → SteamVR 串流** and click **1. 启动 SteamVR**. Connect the headset to the PC through Steam Link or Virtual Desktop and wait for SteamVR to show it as ready. Then click **2. 头显已连接，打开展厅**, and click **开始 VR** in the new preview window. Accept the browser's immersive-VR permission prompt if shown.
 
-This compatibility path uses a separate browser window for stereoscopic WebXR. The exhibition snapshot includes unsaved edits; subsequent changes can be sent with **用最新修改重新启动**. Imported media stays on the PC and is streamed locally to the browser. Keep the desktop app open; **结束预览** disconnects the preview without altering the original project.
+This compatibility path uses a separate browser window for stereoscopic WebXR. The exhibition snapshot includes unsaved edits; subsequent changes can be sent with **重新连接头显 / 更新展厅**. This also starts a fresh browser process when the headset was connected after the previous preview opened. Imported media stays on the PC and is streamed locally to the browser. Keep the desktop app open; **结束预览** disconnects the preview without altering the original project.
 
 The launcher detects SteamVR, browsers and the current OpenXR runtime. It requests SteamVR for the preview process without changing the system default. If no headset is detected, select SteamVR as the current runtime in **SteamVR Settings → OpenXR**, close the preview window, and launch it again. Actual headset and wireless-network validation is still required; the app does not supply its own headset streaming transport.
+
+Version 2026.3.3 shows session progress and persistent startup errors in both windows, expires disconnected preview status, and permits an explicit retry after a stale headset-detection result. Silent session requests time out after 30 seconds; late grants are ended safely. Temporary VR lighting is isolated from the desktop renderer to preserve its shadow textures when leaving VR.
 
 ## Getting Started
 
