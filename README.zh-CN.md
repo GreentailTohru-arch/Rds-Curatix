@@ -7,6 +7,7 @@
   <p>
     <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=release&amp;color=e67e22" alt="Latest release"></a>
     <a href="#下载"><img src="https://img.shields.io/badge/desktop-Windows%20x64-0078D4?style=flat-square" alt="Windows x64 desktop"></a>
+    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/assets/web-badge.svg"><img src="assets/web-badge.svg" alt="Web: Launch" width="100" height="20"></a>
     <a href="#软件发行"><img src="https://img.shields.io/badge/distribution-proprietary-555555?style=flat-square" alt="Proprietary distribution"></a>
   </p>
   <p>
