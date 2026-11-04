@@ -1,3 +1,5 @@
+<p align="right"><strong>简体中文</strong> · <a href="./README.en.md">English</a></p>
+
 <div align="center">
   <img src="assets/logo.svg" alt="Rds Curatix 标志" width="112">
   <h1>Rds Curatix</h1>
