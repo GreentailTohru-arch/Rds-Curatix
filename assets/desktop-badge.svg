@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="149" height="20" viewBox="0 0 149 20" role="img" aria-labelledby="title">
+  <title id="title">Desktop: Windows x64</title>
+  <path fill="#555" d="M0 0h66v20H0z"/>
+  <path fill="#006ab6" d="M66 0h83v20H66z"/>
+  <path fill="#fff" d="M6 5.5 11 4.7v4.8H6zm6-1 6-1v6h-6zm-6 6h5v4.8l-5-.8zm6 0h6v6l-6-1z"/>
+  <g fill="#fff" font-family="Verdana, Arial, sans-serif" font-size="11" text-anchor="middle">
+    <text x="42" y="14">desktop</text>
+    <text x="107.5" y="14">Windows x64</text>
+  </g>
+</svg>
