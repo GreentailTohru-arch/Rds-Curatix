@@ -1,114 +1,119 @@
-<p align="center">
-  <img src="assets/logo.svg" alt="Rds Curatix logo" width="144" height="144">
-</p>
+<div align="center">
+  <img src="assets/logo.svg" alt="Rds Curatix logo" width="112">
+  <h1>Rds Curatix</h1>
+  <p><em>Design an exhibition, stage its media, and walk through it in 3D.</em></p>
+  <p>
+    <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=release&amp;color=e67e22" alt="Latest release"></a>
+    <a href="#download"><img src="https://img.shields.io/badge/desktop-Windows%20x64-0078D4?style=flat-square" alt="Windows x64 desktop"></a>
+    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src="https://img.shields.io/badge/web-launch-e67e22?style=flat-square" alt="Launch the web app"></a>
+    <a href="#distribution"><img src="https://img.shields.io/badge/distribution-proprietary-555555?style=flat-square" alt="Proprietary distribution"></a>
+  </p>
+  <p>
+    <a href="#download">Download</a> ·
+    <a href="#quick-start">Quick start</a> ·
+    <a href="#workspaces">Workspaces</a> ·
+    <a href="#vr-preview">VR preview</a> ·
+    <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases">Release notes</a>
+  </p>
+  <img src="assets/workspace.png" alt="Rds Curatix desktop workspace showing an immersive gallery, floor map, and scene collection" width="960">
+  <p><sub>The built-in Light Field exhibition in the Windows workspace.</sub></p>
+</div>
 
-<h1 align="center">Rds Curatix</h1>
+## What is Rds Curatix?
 
-<p align="center">A modular 3D gallery, exhibition design, and digital twin studio.</p>
+Rds Curatix is a modular 3D gallery, exhibition design, and digital twin studio. Build a venue from rooms, passages, stairs, and exhibition zones. Arrange works and media in the same project, then review the result on foot, through an authored camera route, or in a compatible VR headset.
 
-<p align="center">
-  <a href="https://greentailtohru-arch.github.io/Rds-Curatix/">Launch Web App</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest">Download for Windows</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/issues">Report an Issue</a>
-</p>
-
-## Overview
-
-Rds Curatix is a visual workspace for building virtual exhibitions, arranging artwork, and exploring galleries through interactive and cinematic tours. The Windows desktop app and the web app share the same exhibition tools and portable project format.
-
-**Rds Curatix is proprietary, closed-source software.** This is the official distribution repository. Application source code, development projects, and user exhibition files are not published here.
-
-## Features
-
-- **Modular exhibition spaces** — assemble multi-floor galleries with geometric rooms, corridors, stairs, and named exhibition zones.
-- **Exhibition tools** — place wall-mounted frames, display walls, glass showcases, sculpture plinths, screens, lighting, and furniture.
-- **Immersive media** — bind separate elevation and floor video channels across connected immersive screens, with aspect-ratio and resolution guidance.
-- **Physical rendering** — explore procedural materials, museum lighting, soft shadows, and adjustable rendering quality.
-- **Interactive and cinematic tours** — navigate galleries directly, visualize tour routes, and edit camera movements and artwork focus.
-- **VR roaming** — choose joystick, teleport, or hybrid locomotion before entering VR or from the spatial menu. Uses a compatible renderer when the headset does not grant WebGPU XR.
-- **SteamVR launch on Windows** — launch a local EGOlite / Chrome / Edge VR preview from the desktop app with the current exhibition and unsaved changes; connect the headset using Steam Link or Virtual Desktop.
-- **Connected workflows** — manage artwork in the asset library and inspect spatial and content relationships in the relation tree.
-- **Portable projects** — save `.cura` projects or exchange `.json` files with embedded exhibition assets between desktop and web.
+The Windows and web editions share the exhibition tools and project format. Start in the browser or use the desktop app to open and save projects directly on disk.
 
 ## Download
 
-The current desktop release is **2026.3.7** for **Windows x64**.
+| Edition | Get it | Use it for |
+| --- | --- | --- |
+| **Web app** | [Launch in browser](https://greentailtohru-arch.github.io/Rds-Curatix/) | Open a gallery or start from a template without installing the desktop app. |
+| **Windows x64 installer** | [Download Setup.exe](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.7/Rds-Curatix-2026-2026.3.7-x64-Setup.exe) | Install with shortcuts and register the `.cura` file association. |
+| **Windows x64 portable** | [Download Portable.exe](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.7/Rds-Curatix-2026-2026.3.7-x64-Portable.exe) | Run the desktop app without an installer. |
 
-| Package | Description |
+Windows packages above are **2026.3.7**. [SHA-256 checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.7/SHA256SUMS-2026.3.7.txt) · [All releases](https://github.com/GreentailTohru-arch/Rds-Curatix/releases)
+
+For the web edition, a desktop browser with WebGPU and compatible graphics hardware is recommended. Rendering performance depends on the scene, hardware, and quality preset.
+
+## Quick start
+
+1. Open **Home** for recent projects, or start a new project. Open the **Official Venue Library** (`官方场馆模板库`) to start from a built-in venue.
+2. In **Layout**, place and size architectural modules, organize floors and zones, then add exhibit fixtures.
+3. In **CMS**, import artwork, video, or 3D assets and bind them to the exhibits or immersive surfaces that should display them.
+4. Review the floor map, walk the gallery in **Roaming**, or author a camera route in **Animation**.
+5. Save a `.cura` project or export `.json` with its referenced assets for use on another device.
+
+## Workspaces
+
+| Workspace | What you can do |
 | --- | --- |
-| [Windows Installer](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.7/Rds-Curatix-2026-2026.3.7-x64-Setup.exe) | Installs the desktop app, creates shortcuts, and registers the `.cura` project file association. |
-| [Windows Portable](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.7/Rds-Curatix-2026-2026.3.7-x64-Portable.exe) | Runs the desktop app without an installer. |
-| [SHA-256 Checksums](https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.7/SHA256SUMS-2026.3.6.txt) | Verifies the integrity of the official downloads. |
+| **Layout** | Assemble geometric rooms, curved surfaces, passages, and stairs. Organize them into floors and zones. Resize rooms with outline feedback during the drag. |
+| **Digital Twin** | Review the venue, floor map, zone layout, and exhibition contents. |
+| **Shading** | Adjust materials and lighting. Switch rendering presets to balance visual detail and responsiveness. |
+| **CMS** | Organize artwork and media and assign them to frames, display walls, showcases, plinths, and screens. Bind separate elevation and floor video channels to connected immersive surfaces. |
+| **Roaming** | Walk the exhibition or open the VR preview controls. |
+| **Animation** | Plan camera routes and edit shots, movement, and artwork focus. |
+| **Relation Tree** | Inspect links between spaces, exhibit fixtures, and content. |
 
-Release notes and other available versions are listed on the [Releases page](https://github.com/GreentailTohru-arch/Rds-Curatix/releases).
+## Project files
 
-## Web App
+Both `.cura` and `.json` use the same portable project format. A saved project can contain the venue geometry, exhibits, media bindings, relationship graph, camera routes, and embedded assets referenced by the project.
 
-Open **[Rds Curatix for the Web](https://greentailtohru-arch.github.io/Rds-Curatix/)**. A desktop browser with WebGPU support and compatible graphics hardware provides the best experience. Rendering performance depends on the graphics hardware, selected quality, and exhibition complexity.
+- **Windows** saves `.cura` directly to disk. Use **Save As** to create a separate copy and **Export JSON** for interchange.
+- **Web** keeps drafts in the current browser. Save or export a project file to back up the exhibition or move it between devices or editions.
 
-The web app stores local drafts in the current browser. Export a project to keep a portable backup or move it to another browser or to the desktop app.
+| Shortcut | Action |
+| --- | --- |
+| `Ctrl+O` | Open a `.cura` or `.json` project. |
+| `Ctrl+S` | Save on desktop or download the project on web. |
+| `Ctrl+Shift+S` | Save a separate project copy. |
+| `M` | Open the floor map in the gallery workspace. |
 
-### VR Controls
+## VR preview
 
-In the web app, open **View → WebXR Roaming**, choose **摇杆 (Joystick)**, **位移 (Teleport)**, or **混合 (Hybrid)**, and start VR. Use the left stick to walk, hold/release the trigger to aim/teleport, and flick the right stick for a 45° snap turn. The grip button brings the spatial menu in front of you; point and press the trigger to change modes or exit.
+### WebXR in a headset browser
 
-Use a WebXR-capable headset browser over HTTPS. This update was verified with emulated XR sessions and stereo rendering; physical headset validation remains necessary.
+Open the web app in a compatible headset browser over HTTPS. In the gallery, choose **View → WebXR Roaming** (`视图 → WebXR 漫游`), choose a movement mode, and select **Start VR**. Curatix can use a compatible renderer when the session does not provide WebGPU XR.
 
-### SteamVR from the Windows App
+### SteamVR on Windows
 
-Open **View → WebXR Roaming → SteamVR 串流** and click **启动 SteamVR**. Connect the headset to the PC through Steam Link or Virtual Desktop and wait for SteamVR to show it as ready. Then click **打开展厅预览**, and click **开始 VR** in the new preview window. Accept the browser's immersive-VR permission prompt if shown.
+1. Open **View → WebXR Roaming** and select **Start SteamVR** (`启动 SteamVR`).
+2. Connect the headset through **Steam Link** or **Virtual Desktop** and wait for SteamVR to show it as ready.
+3. Select **Open Exhibition Preview** (`打开展厅预览`). The desktop launcher uses EGOlite when available and also offers installed Chrome or Edge browsers.
+4. In the preview window, select **Start VR** (`开始 VR`) and accept the browser's VR permission prompt if it appears.
 
-This compatibility path uses a separate browser window for stereoscopic WebXR. The exhibition snapshot includes unsaved edits; subsequent changes can be sent with **重新连接 / 更新展厅**. Chrome / Edge previews start a fresh browser process on reconnect. EGOlite uses its existing browser configuration. Imported media stays on the PC and is streamed locally to the browser. Keep the desktop app open; **结束预览** disconnects the preview without altering the original project.
+The preview includes unsaved exhibition edits and reads referenced media through a temporary local connection. Keep Curatix open during the session. Use **Reconnect / Update Exhibition** to refresh the preview after editing, or **End Preview** to disconnect it.
 
-The launcher detects SteamVR, browsers and the current OpenXR runtime. EGOlite is selected first when installed and retains its working VR configuration. Chrome / Edge request SteamVR for their preview process without changing the system default. If no headset is detected, select SteamVR as the current runtime in **SteamVR Settings → OpenXR**, close the preview window, and launch it again. Actual headset and wireless-network validation is still required; the app does not supply its own headset streaming transport.
+<details>
+<summary>View the Windows SteamVR setup panel</summary>
 
-Controller input supports analog trigger and grip values when a browser does not emit select/squeeze events, with no duplicate action when both are available. Spatial menus show a hit cursor and hover highlight. Opening the VR dashboard, losing tracking or disconnecting a controller cancels pending teleportation. The status panel distinguishes connected controllers from missing joystick axes.
+<p align="center">
+  <img src="assets/steamvr-launcher.png" alt="SteamVR setup with browser selection, connection status, and three movement modes" width="860">
+</p>
 
-## Room dimension editing in 2026.3.7
+</details>
 
-Room dimensions use lightweight outline previews while dragging. Existing gallery geometry, exhibits and videos remain alive until a single commit on release. Canceling a preview does not rebuild the scene. Large scenes may still pause briefly on the final commit.
+| Input | Action |
+| --- | --- |
+| Left stick | Walk in **Joystick** or **Hybrid** mode. |
+| Trigger | Aim and release to teleport in **Teleport** or **Hybrid** mode. Point and press to select a spatial menu item. |
+| Right stick | Snap turn by 45°. |
+| Grip | Bring the spatial menu into view to change modes, reset position, or exit. |
 
-## Workspace UI in 2026.3.6
+<details>
+<summary>Troubleshoot headset and controller detection</summary>
 
-The title row shows the app and project name, with window controls on Windows. A second row contains Home, menus and workspace tabs. Opening another menu, clicking outside, choosing an action or pressing Escape closes the previous menu. Home contains recent projects; quick-start cards live exclusively in the official venue library. About shows the software version from the same package metadata as the desktop installer.
+- **Headset not detected:** check the connection in SteamVR before opening the preview. If the headset connected after the preview opened, choose **Reconnect / Update Exhibition** and try again.
+- **Quest controllers detected but sticks do not respond:** on Windows, check for an Ultraleap OpenXR conflict. On a Quest 3 with Steam Link and EGOlite, turning off **OpenXR Support** in the Ultraleap Control Panel and restarting the preview browser restored the joystick inputs. The same setting controls Ultraleap hand tracking in other OpenXR apps.
 
-The desktop VR dialog offers SteamVR streaming only. VR setup, movement cards, connection feedback, the session monitor and the floating headset menu share the dark workspace theme and orange accents. Joystick, teleport and hybrid modes remain available.
-
-## Getting Started
-
-1. Install the Windows app, run the portable edition, or open the web app.
-2. Open a recent project from Home, create a gallery, or choose a quick-start template in the official venue library.
-3. Assemble spaces and place exhibition modules in the workspace.
-4. Import artwork and media in the asset library, then bind them to exhibits or immersive channels.
-5. Explore the exhibition or configure a cinematic tour.
-6. Save or export your project as `.cura` or `.json`.
-
-On desktop, `Ctrl+S` saves and `Ctrl+Shift+S` saves a new copy. In the web app, saving downloads a portable project. `Ctrl+O` opens a compatible project. Press `M` in the gallery workspace to open the floor map.
-
-## Workspace Preview
-
-![Rds Curatix running the built-in immersive exhibition template](assets/workspace.png)
-
-## Repository Contents
-
-- `assets/` — product logo and application preview.
-- `web/` — pre-built web application distributed through GitHub Pages.
-- `.github/workflows/` — deployment of the pre-built web application.
-
-This repository does not include the development environment, application source project, or editable exhibition project files. GitHub's automatically generated repository archives contain only these public distribution materials.
+</details>
 
 ## Feedback
 
-Please [open an issue](https://github.com/GreentailTohru-arch/Rds-Curatix/issues/new) for a reproducible problem or a feature request. Include the app version, operating system, graphics hardware, and reproduction steps. Attach only materials you intend to make public.
+For a bug report, include the Curatix version, edition, OS, GPU, rendering preset, and steps to reproduce. For VR issues, also include the headset, connection method, browser, and the session status shown in Curatix. [Open an issue](https://github.com/GreentailTohru-arch/Rds-Curatix/issues/new)
 
-## License
+## Distribution
 
-Copyright © 2026 Rds. All rights reserved.
-
-Rds Curatix is proprietary software and is not released under an open-source license. Publication of desktop binaries and the compiled web client does not make the application's development source available.
-
-### Quest controllers visible but joystick input missing
-
-On Windows, an installed Ultraleap OpenXR layer can interfere with physical Quest controller input. If Curatix reports missing joystick axes, check Ultraleap Control Panel → Settings → **OpenXR Support**. Turning it off and restarting the VR browser restored joystick walking, snap turning and buttons in our Quest 3 / Steam Link / EGOlite hardware test. This setting also affects Ultraleap hand tracking in other OpenXR applications and can be re-enabled in the same panel. No Ultraleap uninstall or system runtime change is required. A web page cannot change the computer’s OpenXR plugin settings.
+Rds Curatix is proprietary software. This is its official distribution repository. It contains product documentation, branding, and the compiled web app. Windows binaries are distributed through GitHub Releases. The automatic repository archives contain these public distribution files. [Proprietary software notice](NOTICE.md)
