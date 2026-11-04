@@ -6,8 +6,8 @@
   <p><em>搭建数字展厅，编排展品与影像，走进你设计的展览。</em></p>
   <p>
     <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=Release&amp;logo=github&amp;logoColor=white&amp;color=9a431c" alt="Latest release"></a>
-    <a href="#下载"><img src="assets/desktop-badge.svg" width="108" height="20" alt="Desktop: Windows x64"></a>
-    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/assets/web-badge.svg"><img src="assets/web-badge.svg" alt="Web: Launch" width="102" height="20"></a>
+    <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/download/v2026.3.7/Rds-Curatix-2026-2026.3.7-x64-Setup.exe"><img src="assets/desktop-badge.svg" width="108" height="20" alt="Desktop: Windows x64"></a>
+    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src="assets/web-badge.svg" alt="Web: Launch" width="102" height="20"></a>
     <a href="#软件发行"><img src="assets/distribution-badge.svg" width="164" height="20" alt="Distribution: Proprietary"></a>
   </p>
   <p>
