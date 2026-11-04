@@ -5,10 +5,12 @@
   <h1>Rds Curatix</h1>
   <p><em>搭建数字展厅，编排展品与影像，走进你设计的展览。</em></p>
   <p>
-    <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=%E7%89%88%E6%9C%AC&amp;color=e67e22" alt="最新版本"></a>
-    <a href="#下载"><img src="https://img.shields.io/badge/%E6%A1%8C%E9%9D%A2%E7%89%88-Windows%20x64-0078D4?style=flat-square" alt="下载 Windows x64 桌面版"></a>
-    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src="https://img.shields.io/badge/%E7%BD%91%E9%A1%B5%E7%89%88-%E7%AB%8B%E5%8D%B3%E6%89%93%E5%BC%80-e67e22?style=flat-square" alt="打开网页版"></a>
-    <a href="#软件发行"><img src="https://img.shields.io/badge/%E5%8F%91%E8%A1%8C-%E4%B8%93%E6%9C%89%E8%BD%AF%E4%BB%B6-555555?style=flat-square" alt="专有软件发行说明"></a>
+    <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=release&amp;color=e67e22" alt="Latest release"></a>
+    <a href="#下载"><img src="https://img.shields.io/badge/desktop-Windows%20x64-0078D4?style=flat-square" alt="Windows x64 desktop"></a>
+    <a href="#软件发行"><img src="https://img.shields.io/badge/distribution-proprietary-555555?style=flat-square" alt="Proprietary distribution"></a>
+  </p>
+  <p>
+    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src="assets/launch-web-app.svg" width="250" height="55" alt="Launch Web App"></a>
   </p>
   <img src="assets/workspace.png" alt="Rds Curatix 桌面工作台中的沉浸式展厅、楼层地图与场景列表" width="960">
   <p><sub>Windows 桌面版实拍 · 内置「光场 · 沉浸展区」</sub></p>

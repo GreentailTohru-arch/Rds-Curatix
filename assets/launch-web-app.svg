@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="55" viewBox="0 0 250 55" role="img" aria-labelledby="title">
+  <title id="title">Launch the Rds Curatix web app</title>
+  <rect x=".5" y=".5" width="249" height="54" rx="10" fill="#fffaf5" stroke="#e67e22"/>
+  <circle cx="28" cy="27.5" r="16" fill="#ffe8d3"/>
+  <g fill="none" stroke="#91410d" stroke-width="1.45" stroke-linecap="round">
+    <circle cx="28" cy="27.5" r="9"/>
+    <ellipse cx="28" cy="27.5" rx="4" ry="9"/>
+    <path d="M19 27.5h18"/>
+  </g>
+  <text x="55" y="20" fill="#744722" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.35">RDS CURATIX</text>
+  <text x="55" y="39" fill="#25201b" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Launch Web App</text>
+  <path d="M217 34l11-11m-8 0h8v8" fill="none" stroke="#91410d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
