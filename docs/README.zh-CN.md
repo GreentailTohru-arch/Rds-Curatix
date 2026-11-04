@@ -1,19 +1,19 @@
-<p align="right"><a href="./README.md">EN</a> | <strong>CN</strong></p>
+<p align="right"><a href="../README.md">EN</a> | <strong>CN</strong></p>
 
 <div align="center">
-  <img src="assets/logo.svg" alt="Rds Curatix 标志" width="112">
+  <img src="../.github/assets/logo.svg" alt="Rds Curatix 标志" width="112">
   <h1>Rds Curatix</h1>
   <p><em>搭建数字展厅，编排展品与影像，走进你设计的展览。</em></p>
   <p>
     <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=Release&amp;logo=github&amp;logoColor=white&amp;color=9a431c" alt="Latest release"></a>
-    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/assets/desktop-badge.svg"><img src="assets/desktop-badge.svg" width="108" height="20" alt="Desktop: Windows x64"></a>
-    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/assets/web-badge.svg"><img src="assets/web-badge.svg" alt="Web: Launch" width="102" height="20"></a>
-    <a href="#软件发行"><img src="assets/distribution-badge.svg" width="164" height="20" alt="Distribution: Proprietary"></a>
+    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/.github/assets/desktop-badge.svg"><img src="../.github/assets/desktop-badge.svg" width="108" height="20" alt="Desktop: Windows x64"></a>
+    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/.github/assets/web-badge.svg"><img src="../.github/assets/web-badge.svg" alt="Web: Launch" width="102" height="20"></a>
+    <a href="#软件发行"><img src="../.github/assets/distribution-badge.svg" width="164" height="20" alt="Distribution: Proprietary"></a>
   </p>
   <p>
-    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src="assets/launch-web-app.svg" width="250" height="55" alt="Launch Web App"></a>
+    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src="../.github/assets/launch-web-app.svg" width="250" height="55" alt="Launch Web App"></a>
   </p>
-  <img src="assets/workspace.png" alt="Rds Curatix 桌面工作台中的沉浸式展厅、楼层地图与场景列表" width="960">
+  <img src="assets/screenshots/workspace.png" alt="Rds Curatix 桌面工作台中的沉浸式展厅、楼层地图与场景列表" width="960">
   <p><sub>Windows 桌面版实拍 · 内置「光场 · 沉浸展区」</sub></p>
 </div>
 
@@ -88,7 +88,7 @@ Windows 桌面版与网页版共用展陈工具和工程格式。可以在浏览
 <summary>查看 Windows SteamVR 设置界面</summary>
 
 <p align="center">
-  <img src="assets/steamvr-launcher.png" alt="SteamVR 设置界面，包含预览浏览器、连接状态和三种移动方式" width="860">
+  <img src="assets/screenshots/steamvr-launcher.png" alt="SteamVR 设置界面，包含预览浏览器、连接状态和三种移动方式" width="860">
 </p>
 
 </details>
@@ -114,4 +114,4 @@ Windows 桌面版与网页版共用展陈工具和工程格式。可以在浏览
 
 ## 软件发行
 
-Rds Curatix 是专有软件。本仓库用于发布产品文档、品牌素材和编译后的网页版。Windows 安装包与便携版通过 GitHub Releases 发布。GitHub 自动生成的仓库压缩包包含这里公开的发行文件。[专有软件声明](NOTICE.md)
+Rds Curatix 是专有软件。本仓库用于发布产品文档、品牌素材和编译后的网页版。Windows 安装包与便携版通过 GitHub Releases 发布。GitHub 自动生成的仓库压缩包包含这里公开的发行文件。[专有软件声明](../NOTICE.md)

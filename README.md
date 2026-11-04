@@ -1,19 +1,19 @@
-<p align="right"><strong>EN</strong> | <a href="./README.zh-CN.md">CN</a></p>
+<p align="right"><strong>EN</strong> | <a href="./docs/README.zh-CN.md">CN</a></p>
 
 <div align="center">
-  <img src="assets/logo.svg" alt="Rds Curatix logo" width="112">
+  <img src=".github/assets/logo.svg" alt="Rds Curatix logo" width="112">
   <h1>Rds Curatix</h1>
   <p><em>Design an exhibition, stage its media, and walk through it in 3D.</em></p>
   <p>
     <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=Release&amp;logo=github&amp;logoColor=white&amp;color=9a431c" alt="Latest release"></a>
-    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/assets/desktop-badge.svg"><img src="assets/desktop-badge.svg" width="108" height="20" alt="Desktop: Windows x64"></a>
-    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/assets/web-badge.svg"><img src="assets/web-badge.svg" alt="Web: Launch" width="102" height="20"></a>
-    <a href="#distribution"><img src="assets/distribution-badge.svg" width="164" height="20" alt="Distribution: Proprietary"></a>
+    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/.github/assets/desktop-badge.svg"><img src=".github/assets/desktop-badge.svg" width="108" height="20" alt="Desktop: Windows x64"></a>
+    <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/.github/assets/web-badge.svg"><img src=".github/assets/web-badge.svg" alt="Web: Launch" width="102" height="20"></a>
+    <a href="#distribution"><img src=".github/assets/distribution-badge.svg" width="164" height="20" alt="Distribution: Proprietary"></a>
   </p>
   <p>
-    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src="assets/launch-web-app.svg" width="250" height="55" alt="Launch Web App"></a>
+    <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src=".github/assets/launch-web-app.svg" width="250" height="55" alt="Launch Web App"></a>
   </p>
-  <img src="assets/workspace.png" alt="Rds Curatix desktop workspace showing an immersive gallery, floor map, and scene collection" width="960">
+  <img src="docs/assets/screenshots/workspace.png" alt="Rds Curatix desktop workspace showing an immersive gallery, floor map, and scene collection" width="960">
   <p><sub>The built-in Light Field exhibition in the Windows workspace.</sub></p>
 </div>
 
@@ -88,7 +88,7 @@ The preview includes unsaved exhibition edits and reads referenced media through
 <summary>View the Windows SteamVR setup panel</summary>
 
 <p align="center">
-  <img src="assets/steamvr-launcher.png" alt="SteamVR setup with browser selection, connection status, and three movement modes" width="860">
+  <img src="docs/assets/screenshots/steamvr-launcher.png" alt="SteamVR setup with browser selection, connection status, and three movement modes" width="860">
 </p>
 
 </details>

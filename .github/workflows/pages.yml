@@ -27,12 +27,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test -f web/index.html
-          test -f assets/logo.svg
+          test -f website/index.html
+          test -f .github/assets/logo.svg
           for forbidden in src electron tests scripts node_modules package.json package-lock.json tsconfig.json; do
             test ! -e "$forbidden"
           done
-          if find web -type f \( -iname '*.map' -o -iname '*.ts' -o -iname '*.tsx' -o -iname '*.cura' -o -iname '*.galproj' \) -print -quit | grep -q .; then
+          if find website -type f \( -iname '*.map' -o -iname '*.ts' -o -iname '*.tsx' -o -iname '*.cura' -o -iname '*.galproj' \) -print -quit | grep -q .; then
             echo 'Development or project files cannot be published.' >&2
             exit 1
           fi
@@ -41,7 +41,7 @@ jobs:
       - name: Upload pre-built web app
         uses: actions/upload-pages-artifact@v3
         with:
-          path: web
+          path: website
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
