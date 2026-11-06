@@ -8,7 +8,6 @@
     <a href="https://github.com/GreentailTohru-arch/Rds-Curatix/releases/latest"><img src="https://img.shields.io/github/v/release/GreentailTohru-arch/Rds-Curatix?style=flat-square&amp;label=Release&amp;logo=github&amp;logoColor=white&amp;color=9a431c" alt="Latest release"></a>
     <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/.github/assets/desktop-badge.svg"><img src=".github/assets/desktop-badge.svg" width="112" height="20" alt="Windows 10+"></a>
     <a href="https://raw.githubusercontent.com/GreentailTohru-arch/Rds-Curatix/main/.github/assets/web-badge.svg"><img src=".github/assets/web-badge.svg" alt="Web Browser" width="111" height="20"></a>
-    <a href="#distribution"><img src=".github/assets/distribution-badge.svg" width="164" height="20" alt="Distribution: Proprietary"></a>
   </p>
   <p>
     <a href="https://greentailtohru-arch.github.io/Rds-Curatix/"><img src=".github/assets/launch-web-app.svg" width="250" height="55" alt="Launch Web App"></a>
